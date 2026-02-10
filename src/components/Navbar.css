@@ -1,0 +1,38 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 10;
+}
+
+.nav-menu {
+  display: flex;
+  gap: clamp(3rem, 6vw, 6rem);
+  list-style: none;
+}
+
+.nav-menu li {
+font-family: "Inter", sans-serif;
+
+  font-weight: 400;     /* Semi Bold */
+  font-size: 15px;      /* From screenshot */
+  line-height: normal;  /* Auto */
+  letter-spacing: 0;    /* 0% */
+
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+
+  cursor: pointer;
+}
+
+.nav-menu .hire {
+  font-weight: 400;
+}

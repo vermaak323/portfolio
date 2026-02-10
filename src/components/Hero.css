@@ -1,0 +1,132 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: clamp(3rem, 8vw, 10rem);
+}
+
+/* TEXT WRAPPER */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateY(70px);
+}
+
+
+.space {
+  display: inline-block;
+  width: 0.3em;   /* 👈 controls gap between AARYAN and VERMA */
+}
+
+
+.a-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.a-letter {
+  position: relative;
+  z-index: 2;
+}
+.a-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: auto;
+
+  z-index: 3;
+  pointer-events: none;
+}
+/* "HEY THERE, IT'S ME" */
+.intro {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;           /* Medium */
+  font-size: 29px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.3em;      /* 30% */
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* NAME */
+.name {
+  /* padding: 40px; */
+  display: flex;
+  align-items: center;
+  gap: 0.05em;
+  transform: translateX(0.25em);
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-size: clamp(5.5rem, 9vw, 9.5rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* WEB DESIGNER & DEVELOPER */
+.role {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;           /* Bold */
+  font-size: 39px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.3em;      /* 30% */
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.subheading {
+  margin-top: 2.5rem;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;          /* Regular */
+  font-size: 18px;
+  line-height: normal;       /* Auto */
+
+  letter-spacing: 0.12em;    /* 12% */
+
+  max-width: 520px;
+  text-align: left;
+
+  color: rgba(255, 255, 255, 0.75);
+  transform: translateY(35px);
+}
+
+/* VERMA WRAPPER */
+.verma-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* VERMA TEXT */
+.verma-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* VERMA SVG OVERLAY */
+.verma-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 115%;       /* slightly tighter than A */
+  height: auto;
+
+  z-index: 3;
+  pointer-events: none;
+}
